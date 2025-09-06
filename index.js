@@ -1,5 +1,6 @@
 // CTF - SQL Injection no Login
 // Tecnologias: Node.js, Express, SQLite
+// No login basta lançar esse comando ' OR '1'='1' -- (Comando que é sempre verdadeiro Isso “quebra” a condição original, e o banco retorna linhas mesmo sem senha válida)
 
 const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
